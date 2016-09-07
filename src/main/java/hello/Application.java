@@ -31,19 +31,19 @@ import hello.MessageService;
  * 
  * 关于@Import
  */
-@Configuration
+//@Configuration
 @ComponentScan
 public class Application {
 
-	@Bean
-	@Scope("prototype")
-	MessageService mockMessageService() {
-		return new MessageService() {
-			public String getMessage() {
-				return "Hello world";
-			}
-		};
-	}
+//	@Bean
+//	@Scope("prototype")
+//	MessageService mockMessageService() {
+//		return new MessageService() {
+//			public String getMessage() {
+//				return "Hello world";
+//			}
+//		};
+//	}
 
 	public static void main(String[] args) {
 		// ApplicationContext context =
